@@ -8,7 +8,7 @@ type MainIntroProps = {};
 
 const MainIntro: FC<MainIntroProps> = (props) => {
   return (
-    <div className="relative">
+    <div className="relative h-screen">
       <Wave
         className="h-[85vh] m-0 rotate-180 z-10"
         // #F8F0E3

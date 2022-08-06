@@ -10,7 +10,7 @@ const NavBar: FC<NavBarProps> = (props) => {
   const router = useRouter();
 
   return (
-    <div className="fixed z-50 flex flex-row justify-between items-center w-full py-14 px-28 h-20">
+    <div className="fixed z-50 flex flex-row justify-between items-center w-full py-14 px-28 h-20 bg-yellow-300">
       <Image src={logo} width={180} height={90} alt="logo" />
       <div>
         <ul className="flex flex-row space-x-10">
