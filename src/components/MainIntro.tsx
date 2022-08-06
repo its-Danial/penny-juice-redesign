@@ -3,7 +3,7 @@ import { FC } from "react";
 import Wave from "react-wavify";
 import drink from "../../public/svg/Lemonade_Isometric.svg";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
-import { BsCupStraw } from "react-icons/Bs";
+import { BsCupStraw } from "react-icons/bs";
 type MainIntroProps = {};
 
 const MainIntro: FC<MainIntroProps> = (props) => {
@@ -21,13 +21,14 @@ const MainIntro: FC<MainIntroProps> = (props) => {
         }}
       />
       <div
-        className="absolute w-full h-full flex top-[50%] left-[50%] overflow-hidden bg-transparent"
+        className="absolute w-full h-full flex top-[45%] left-[50%] overflow-hidden bg-transparent"
         style={{ transform: "translate(-50%, -50%)" }}
       >
         <div className="my-auto w-full mx-28 flex flex-row justify-between items-center">
           <div className="basis-[45%] flex flex-col">
             <h1 className="text-5xl tracking-wider text-eggshell font-extrabold">
-              100% blended fruit juice concentrate specifically designed for childcare centers.
+              <span className="text-orange-400">100% </span>blended fruit juice concentrate specifically designed for
+              <span className="text-orange-400"> childcare centers.</span>
             </h1>
             <div className="flex flex-row space-x-4 mt-6">
               <button className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700 rounded-lg">
