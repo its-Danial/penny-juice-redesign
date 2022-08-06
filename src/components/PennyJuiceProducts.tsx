@@ -15,7 +15,7 @@ const PennyJuiceProducts: FC<PennyJuiceProductsProps> = (props) => {
             <Image src={juices} width={730} height={430} alt="blob" />
           </div>
         </div>
-        <div className="basis-2/3 flex flex-col my-auto space-y-6">
+        <div className="basis-2/3 flex flex-col my-auto space-y-3">
           <h3 className="text-orange-500 text-4xl font-bold">
             Penny Juice Products Comply With All Requirements for CACFP, Subsidy, and Nutrition Set Forth by the FDA
           </h3>

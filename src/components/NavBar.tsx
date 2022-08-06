@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import logo from "../../public/images/logo-crop.png";
+import svgLogo from "../../public/svg/Lemonade_logo.svg";
 
 type NavBarProps = {};
 

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import ContactUs from "../src/components/buttons/ContactUs";
 import HealthyJuice from "../src/components/HealthyJuice";
 import MainIntro from "../src/components/MainIntro";
 import PennyJuiceProducts from "../src/components/PennyJuiceProducts";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <RainbowFlavour />
       <HealthyJuice />
       <PennyJuiceProducts />
+      <ContactUs />
     </div>
   );
 };
