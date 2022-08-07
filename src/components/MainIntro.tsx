@@ -4,6 +4,7 @@ import Wave from "react-wavify";
 import drink from "../../public/svg/Lemonade_Isometric.svg";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 import { BsCupStraw } from "react-icons/bs";
+import { motion } from "framer-motion";
 type MainIntroProps = {};
 
 const MainIntro: FC<MainIntroProps> = (props) => {
@@ -26,12 +27,22 @@ const MainIntro: FC<MainIntroProps> = (props) => {
       >
         <div className="my-auto w-full mx-28 flex flex-row justify-between items-center">
           <div className="basis-[45%] flex flex-col">
-            <h1 className="text-5xl tracking-wider text-eggshell font-extrabold">
+            <motion.h1
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 260, delay: 0.5 }}
+              className="text-5xl tracking-wider text-eggshell font-extrabold"
+            >
               <span className="text-orange-400">100% </span>blended fruit juice concentrate specifically designed for
               <span className="text-orange-400"> childcare centers.</span>
-            </h1>
+            </motion.h1>
             <div className="flex flex-row space-x-4 mt-6">
-              <button className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700 rounded-lg">
+              <motion.button
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1 }}
+                className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700 rounded-lg"
+              >
                 <div className="flex flex-row items-center space-x-2">
                   <FaGooglePlay size={30} />
                   <div className="flex flex-col items-start">
@@ -39,8 +50,13 @@ const MainIntro: FC<MainIntroProps> = (props) => {
                     <p className="font-semibold text-base">Google Play</p>
                   </div>
                 </div>
-              </button>
-              <button className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700   rounded-lg">
+              </motion.button>
+              <motion.button
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.7 }}
+                className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700   rounded-lg"
+              >
                 <div className="flex flex-row items-center space-x-2">
                   <FaApple size={30} />
                   <div className="flex flex-col items-start">
@@ -48,10 +64,15 @@ const MainIntro: FC<MainIntroProps> = (props) => {
                     <p className="font-semibold text-base">Apple Store</p>
                   </div>
                 </div>
-              </button>
+              </motion.button>
             </div>
           </div>
-          <div className="group relative cursor-pointer">
+          <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 150, delay: 0.7 }}
+            className="group relative cursor-pointer"
+          >
             <Image className="basis-1/2 group-hover:opacity-50" src={drink} width={550} height={550} alt="drink" />
             <div className="invisible group-hover:visible absolute top-[45%] left-[40%]">
               <button className="px-4 py-2 bg-green-600 text-eggshell hover:scale-105 hover:bg-green-700   rounded-lg">
@@ -62,7 +83,7 @@ const MainIntro: FC<MainIntroProps> = (props) => {
                 </div>
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

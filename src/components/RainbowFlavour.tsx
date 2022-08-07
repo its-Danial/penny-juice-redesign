@@ -1,13 +1,19 @@
 import Image from "next/image";
 import { FC } from "react";
-import blob1 from "../../public/svg/blob.svg";
 import fruitSplash from "../../public/images/fruit-splash.png";
+import blob1 from "../../public/svg/blob.svg";
+
+import { motion } from "framer-motion";
+
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 type RainbowFlavourProps = {};
 
 const RainbowFlavour: FC<RainbowFlavourProps> = (props) => {
+  const animationProps = useScrollAnimation();
+
   return (
-    <div className="w-full  flex relative">
+    <motion.div {...animationProps} className="w-full  flex relative">
       <div className="my-auto w-full mx-28 flex flex-row space-x-7">
         <div className="">
           <Image src={blob1} width={800} height={800} alt="blob" />
@@ -27,7 +33,7 @@ const RainbowFlavour: FC<RainbowFlavourProps> = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default RainbowFlavour;

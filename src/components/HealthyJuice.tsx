@@ -2,12 +2,15 @@ import { FC } from "react";
 import Image from "next/image";
 import blob2 from "../../public/svg/blob-2.svg";
 import girlImg from "../../public/images/girl-drinking.png";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+import { motion } from "framer-motion";
 
 type HealthyJuiceProps = {};
 
 const HealthyJuice: FC<HealthyJuiceProps> = (props) => {
+  const animationProps = useScrollAnimation();
   return (
-    <div className="w-full  flex relative">
+    <motion.div {...animationProps} className="w-full  flex relative">
       <div className="my-auto w-full mx-28 flex flex-row space-x-7">
         <div className="basis-2/3 flex flex-col my-auto space-y-6">
           <h3 className="text-orange-500 text-5xl font-bold">Healthy Juice Concentrates for All Kids to Enjoy</h3>
@@ -29,7 +32,7 @@ const HealthyJuice: FC<HealthyJuiceProps> = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default HealthyJuice;
