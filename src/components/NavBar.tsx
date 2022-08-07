@@ -17,14 +17,10 @@ const NavBar: FC<NavBarProps> = (props) => {
           <Link href="/">
             <li className={router.pathname === "/" ? "nav-btn-active" : "nav-btn"}>Home</li>
           </Link>
-          <Link href="/childcare-juice-concentrates">
-            <li className={router.pathname === "/childcare-juice-concentrates" ? "nav-btn-active" : "nav-btn"}>
-              Children Juice
-            </li>
-          </Link>
-          <Link href="/order-now">
-            <li className={router.pathname === "/order-now" ? "nav-btn-active" : "nav-btn"}>Order Now</li>
-          </Link>
+
+          <li className="nav-btn">Children Juice</li>
+
+          <li className="nav-btn">Order Now</li>
         </ul>
       </div>
     </div>
