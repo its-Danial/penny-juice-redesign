@@ -16,8 +16,26 @@ const Home: NextPage = () => {
         <meta name="description" content="Penny Juice Redesign" />
       </Head>
 
-      <div className="mx-28 mt-24 relative h-full">
+      <div className=" mt-24 relative h-full">
         <AboutUs />
+        <div className="my-12 bg-yellow-50/50 h-40 flex flex-row justify-around items-center">
+          <div className="flex flex-col text-center space-y-1">
+            <h2 className="text-5xl font-extrabold text-orange-600">48</h2>
+            <p className="font-medium text-base text-orange-500">States</p>
+          </div>
+          <div className="flex flex-col text-center space-y-1">
+            <h2 className="text-5xl font-extrabold text-orange-600">200+</h2>
+            <p className="font-medium text-base text-orange-500">Childcare centers</p>
+          </div>
+          <div className="flex flex-col text-center space-y-1">
+            <h2 className="text-5xl font-extrabold text-orange-600">30,000+</h2>
+            <p className="font-medium text-base text-orange-500">Purchases</p>
+          </div>
+          <div className="flex flex-col text-center space-y-1">
+            <h2 className="text-5xl font-extrabold text-orange-600">16</h2>
+            <p className="font-medium text-base text-orange-500">Flavours</p>
+          </div>
+        </div>
         <Testimonials />
       </div>
     </div>
