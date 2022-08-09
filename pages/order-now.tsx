@@ -5,7 +5,7 @@ const OrderNow: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Order Now</title>
+        <title>Penny Juice | Order Now</title>
         <meta name="description" content="Penny Juice Order now" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
