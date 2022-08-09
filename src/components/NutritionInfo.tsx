@@ -5,11 +5,11 @@ type NutritionInfoProps = {};
 
 const NutritionInfo: FC<NutritionInfoProps> = (props) => {
   return (
-    <div className="flex flex-row w-full">
+    <div className="flex flex-row w-full mb-16 shadow">
       <div className="flex flex-col w-[60%] justify-between bg-yellow-50 rounded-l-md overflow-hidden">
         <div className="space-y-3 p-4">
           <h2 className="text-4xl font-extrabold leading-none text-orange-600">Ingredients</h2>
-          <p className="text-lg leading-none text-gray-800">
+          <p className="text-lg leading-none text-gray-600">
             Premium Quality 100% Fruit Juice Concentrate.{" "}
             <span className="text-xl font-bold text-orange-600">No Sugar Added.</span> Non Refrigerated
           </p>

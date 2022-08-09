@@ -12,8 +12,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Penny Juice Redesign</title>
-        <meta name="description" content="Penny Juice Redesign" />
+        <title>Penny Juice | About us</title>
+        <meta name="description" content="Penny Juice | Nutrition" />
       </Head>
 
       <div className=" mt-24 relative h-full">
