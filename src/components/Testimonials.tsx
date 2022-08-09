@@ -14,8 +14,8 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
           <blockquote className=" mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Penny Juices are my new favorite brand.</h3>
             <p className="my-4">
-              "Thank you for the opportunity to let everyone know about your terrific company! it's easy to store and
-              mix and we received great service!"
+              {'"'}Thank you for the opportunity to let everyone know about your terrific company! it{"'"}s easy to
+              store and mix and we received great service!{'"'}
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -34,8 +34,8 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Amazing taste!</h3>
             <p className="my-4">
-              "The childrenat Kid Kollege love the taste and drink penny juice without encouragement from our teachers.
-              I like Penny Juice for that reason."
+              {'"'}The childrenat Kid Kollege love the taste and drink penny juice without encouragement from our
+              teachers. I like Penny Juice for that reason.{'"'}
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -54,8 +54,8 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">A lot of fun colors.</h3>
             <p className="my-4">
-              "I have been using Penny Juice at my childcare centre for 2 years. The children love all the fun colors. I
-              have recommended Penny Juice to other childcare directors in the area."
+              {'"'}I have been using Penny Juice at my childcare centre for 2 years. The children love all the fun
+              colors. I have recommended Penny Juice to other childcare directors in the area.{'"'}
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -74,8 +74,8 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Fantastic Service!</h3>
             <p className="my-4">
-              "Penny Juice always manages to provide friendly and professional service. This is why I keep coming back
-              to them after many years, I find the company reliable and trustworthy."
+              {'"'}Penny Juice always manages to provide friendly and professional service. This is why I keep coming
+              back to them after many years, I find the company reliable and trustworthy.{'"'}
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
