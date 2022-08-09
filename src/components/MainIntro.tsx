@@ -26,17 +26,31 @@ const MainIntro: FC<MainIntroProps> = (props) => {
         style={{ transform: "translate(-50%, -50%)" }}
       >
         <div className="my-auto w-full mx-28 flex flex-row justify-between items-center">
-          <div className="basis-[45%] flex flex-col">
+          <div className="basis-1/2 flex flex-col space-y-6">
             <motion.h1
               initial={{ opacity: 0, x: -200 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 260, delay: 0.5 }}
               className="text-5xl tracking-wider text-eggshell font-extrabold"
             >
-              <span className="text-orange-400">100% </span>blended fruit juice concentrate specifically designed for
-              <span className="text-orange-400"> childcare centers.</span>
+              Juice that makes
+              <span className="text-orange-400">
+                {" '"}cents{"'"}
+              </span>
             </motion.h1>
-            <div className="flex flex-row space-x-4 mt-6">
+
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 260, delay: 0.7 }}
+              className="text-base text-gray-500"
+            >
+              Penny Juice is a 100% blended fruit juice concentrate for kids, made with the only the freshest fruit
+              juices. We pride ourselves on our quality, wide variety of flavours and our service . Make Penny juice
+              your first choice!
+            </motion.p>
+
+            <div className="flex flex-row space-x-4">
               <motion.button
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
