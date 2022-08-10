@@ -13,7 +13,7 @@ const RainbowFlavour: FC<RainbowFlavourProps> = (props) => {
   const animationProps = useScrollAnimation();
 
   return (
-    <motion.div {...animationProps} className="w-full  flex relative">
+    <motion.div {...animationProps} className="w-full mt-40 flex relative">
       <div className="my-auto w-full mx-28 flex flex-row space-x-7">
         <div className="">
           <Image src={blob1} width={800} height={800} alt="blob" />

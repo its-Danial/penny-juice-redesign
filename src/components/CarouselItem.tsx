@@ -1,9 +1,10 @@
 import { FC } from "react";
 
 type CarouselItemProps = {
-  color: string;
   image: JSX.Element;
-  fruitName: string;
+
+  title: string;
+  text: string;
 };
 
 const CarouselItem: FC<CarouselItemProps> = (props) => {
@@ -13,9 +14,9 @@ const CarouselItem: FC<CarouselItemProps> = (props) => {
   return (
     <div className={`flex flex-row w-full justify-around`}>
       {props.image}
-      <div className="py-40">
-        <h1 className="text-6xl text-orange-600 font-extrabold">100% pure {props.fruitName}</h1>
-        <p className="text-base">No sugar or additional preservative.</p>
+      <div className="py-40 space-y-8">
+        <h1 className="text-6xl max-w-xl text-orange-600 font-extrabold">{props.title}</h1>
+        <p className="text-lg text-gray-500 max-w-lg">{props.text}</p>
       </div>
     </div>
   );

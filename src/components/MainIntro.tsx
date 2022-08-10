@@ -43,7 +43,7 @@ const MainIntro: FC<MainIntroProps> = (props) => {
               initial={{ opacity: 0, x: -200 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 260, delay: 0.7 }}
-              className="text-base text-gray-500"
+              className="text-base text-gray-500 w-[90%]"
             >
               Penny Juice is a 100% blended fruit juice concentrate for kids, made with the only the freshest fruit
               juices. We pride ourselves on our quality, wide variety of flavours and our service . Make Penny juice

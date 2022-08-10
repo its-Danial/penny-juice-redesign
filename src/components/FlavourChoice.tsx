@@ -17,20 +17,44 @@ const FlavourChoice: FC<FlavourChoiceProps> = (props) => {
   let resetTimeout: any;
 
   const juiceImages = [
-    { img: apple, name: "apple", title: "bla bla", text: "na nan a", color: "#0f172a" },
-    { img: grape, name: "grape", title: "bla bla", text: "na nan a", color: "#0f172a" },
-    { img: orange, name: "orange", title: "bla bla", text: "na nan a", color: "#0f172a" },
-    { img: peach, name: "peach", title: "bla bla", text: "na nan a", color: "#0f172a" },
-    { img: strawberry, name: "strawberries", title: "bla bla", text: "na nan a", color: "#0f172a" },
-    { img: watermelon, name: "watermelon", title: "bla bla", text: "na nan a", color: "#0f172a" },
+    {
+      img: apple,
+      title: "100% Apple Juice",
+      text: "The crisp, fresh taste of apples in every bottle. Four servings of fruit and 100% Daily Value of Vitamin C in every bottle. No added sugar, artificial flavors, colors, or preservatives. Perfect on-the-go size. 100% of profits go to the American family farmers who own Welch's.",
+    },
+    {
+      img: grape,
+      title: "100% Grape Juice Concord Grape with Calcium",
+      text: "The bold, delicious taste of Concord grapes in every glass. A good source of calcium to help support healthy bones and teeth. Helps support a healthy heart. No added sugar, flavors, colors or preservatives. Non-GMO. 100% of profits go to the American family farmers who own Welch's.",
+    },
+    {
+      img: orange,
+      title: "100% Orange Juice",
+      text: "The delicious taste of oranges in every bottle. Four servings of fruit and 100% Daily Value of Vitamin C in every bottle. No added sugar, artificial flavors, colors, or preservatives. Perfect on-the-go size. 100% of profits go to the American family farmers who own Welch's.",
+    },
+    {
+      img: peach,
+      title: "100% Peach Juice",
+      text: "Deliciously fruity flavor. No preservatives. 100% Daily Value of Vitamin C in every serving. Refreshingly great taste. 100% of profits go to the American family farmers who own Welch's.",
+    },
+    {
+      img: strawberry,
+      title: "Strawberry",
+      text: "Delicious taste. Perfect on-the-go size. NO artificial flavors, red 40 or preservatives. 100% of profits go to the American family farmers who own Welch's.",
+    },
+    {
+      img: watermelon,
+      title: "100% Watermelon Juice",
+      text: "Deliciously fruity flavor. Made with real fruit juice. 100% Daily Value of Vitamin C in every serving. Refreshingly great taste. 100% of profits go to the American family farmers who own Welch's.",
+    },
   ];
   const carouselItems = juiceImages.map((juice, index) => (
     <>
-      <CarouselItem color={juice.color} fruitName={juice.name} image={<Image src={juice.img} alt={juice.name} />} />
+      <CarouselItem text={juice.text} title={juice.title} image={<Image src={juice.img} alt={juice.title} />} />
     </>
   ));
   return (
-    <div>
+    <div className="mx-14 mt-12">
       {/* @ts-ignore */}
       <Carousel
         renderPagination={({ pages, activePage, onClick }) => {
