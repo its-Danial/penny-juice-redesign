@@ -10,7 +10,7 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
         <p className="font-light text-gray-500 lg:mb-16 sm:text-xl ">Hear what some of our customer have to say.</p>
       </div>
       <div className=" grid mb-8 lg:mb-12 lg:grid-cols-2">
-        <figure className="rounded-tl-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50/50 border-b border-gray-200 md:p-12 lg:border-r ">
+        <figure className="rounded-tl-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50 border-b border-gray-200 md:p-12 lg:border-r ">
           <blockquote className=" mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Penny Juices are my new favorite brand.</h3>
             <p className="my-4">
@@ -30,7 +30,7 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
             </div>
           </figcaption>
         </figure>
-        <figure className="rounded-tr-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50/50 border-b border-gray-200 md:p-12 ">
+        <figure className="rounded-tr-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50 border-b border-gray-200 md:p-12 ">
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Amazing taste!</h3>
             <p className="my-4">
@@ -50,7 +50,7 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
             </div>
           </figcaption>
         </figure>
-        <figure className="rounded-bl-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50/50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r ">
+        <figure className="rounded-bl-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r ">
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">A lot of fun colors.</h3>
             <p className="my-4">
@@ -70,7 +70,7 @@ const Testimonials: FC<TestimonialsProps> = (props) => {
             </div>
           </figcaption>
         </figure>
-        <figure className="rounded-br-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50/50 border-gray-200 md:p-12 ">
+        <figure className="rounded-br-3xl  flex flex-col justify-center items-center p-8 text-center bg-yellow-50 border-gray-200 md:p-12 ">
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 ">
             <h3 className="text-lg font-semibold text-orange-600">Fantastic Service!</h3>
             <p className="my-4">

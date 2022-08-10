@@ -12,9 +12,10 @@ const FactsHeader: FC<FactsHeaderProps> = (props) => {
         <div className="w-1/2 space-y-4">
           <h1 className="text-5xl text-orange-600 tracking-tight font-extrabold">Standards.</h1>
           <p className="text-gray-500 text-lg">
-            Our <span className="text-orange-600">speedy delivery</span> will see that you receive our product at its
-            freshest, however, Penny Juice can be <span className="text-orange-600">stored without refrigeration.</span>{" "}
-            Penny Juice products comply with all requirements for subsidy and nutrition set forth by the FDA.
+            Our <span className="text-orange-600 font-semibold">speedy delivery</span> will see that you receive our
+            product at its
+            <span className="text-orange-600 font-semibold"> freshest.</span> Penny Juice products comply with all
+            requirements for subsidy and nutrition set forth by the FDA.
           </p>
         </div>
       </div>

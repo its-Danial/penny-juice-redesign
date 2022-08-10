@@ -26,9 +26,9 @@ const NavBar: FC<NavBarProps> = (props) => {
             <li className={router.pathname === "/nutrition" ? "nav-btn-active" : "nav-btn"}>Nutrition & Facts</li>
           </Link>
 
-          <Link href="/order">
+          <Link href="/order-now">
             <div className="flex flex-row items-center space-x-2">
-              <li className={router.pathname === "/order" ? "nav-btn-active" : "nav-btn"}>Order now</li>
+              <li className={router.pathname === "/order-now" ? "nav-btn-active" : "nav-btn"}>Order now</li>
               <AiOutlineShoppingCart size={25} className="text-orange-500" />
             </div>
           </Link>
